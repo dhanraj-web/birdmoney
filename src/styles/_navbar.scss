@@ -5,6 +5,12 @@
     align-items: center;
     position: fixed;
     top: 0;
+    .main-logo{
+        img{
+            height: 4rem;
+            width: 4rem;
+        }
+    }
     .nav-container{
         display: flex;
         height: 100%;
