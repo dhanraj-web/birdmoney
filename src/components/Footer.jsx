@@ -10,6 +10,8 @@ const Footer = () => {
           Bird.Money is powered by a driven team <br /> and an amazing
           community.
         </p>
+        <p>icons</p>
+        <p>Copyright 2021 Bird.Money</p>
       </div>
       <div>
         <p>Bird.money</p>

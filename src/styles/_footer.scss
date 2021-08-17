@@ -1,7 +1,8 @@
 .footer-container{
     display: flex;
-    justify-content: space-around;
-    height: 80vh;
+    justify-content: space-evenly;
+    height: 30vh;
+    flex-wrap: wrap;
     padding: 8rem 0;
     background-color: #070d1a;
     color: #ffffff;

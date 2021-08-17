@@ -3,6 +3,8 @@
     width: 100%;
     grid-template-columns: 20% 80%;
     align-items: center;
+    position: fixed;
+    top: 0;
     .nav-container{
         display: flex;
         height: 100%;
