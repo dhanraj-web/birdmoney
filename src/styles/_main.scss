@@ -1,0 +1,9 @@
+.main-container{
+    display: grid;
+    place-content: center;
+    padding: 10%;  
+    .container-card{
+        height: 80vh;
+        width: 800px;
+    }
+}

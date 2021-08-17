@@ -1,0 +1,11 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 8rem 0;
+    background-color: #070d1a;
+    color: #ffffff;
+    li{
+        list-style-type: none;
+    }
+}
