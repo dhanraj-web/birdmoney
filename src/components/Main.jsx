@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useContext, useState } from 'react'
+import { EthContext } from "../contract/contract";
 
 const Main = () => {
+  const { bscToEthTransfer ,amount,ethToBscTransfer,handleChange} = useContext(EthContext);
+  // const [amount,setAmount] = useState('');
+  // console.log("bscToEthTransfer",bscToEthTransfer);
+
   return (
     <div className="main-container">
       <div className="container-card">
@@ -17,6 +22,7 @@ const Main = () => {
                 type="number"
                 placeholder="ERC20"
                 id="erc20value"
+                value={amount}
               />
             </div>
             <i class="arrow-icon fas fa-exchange-alt"></i>
@@ -27,10 +33,11 @@ const Main = () => {
                 type="number"
                 placeholder="BEP20"
                 id="bep20value"
+                value={amount}
               />
             </div>
           </div>
-          <button className="swap-btn">Swap</button>
+          <button className="swap-btn" onClick={ethToBscTransfer}>Swap</button>
         </div>
         <div className="erc-container">
           <div className="erc-balance-container">
@@ -45,6 +52,8 @@ const Main = () => {
                 type="number"
                 placeholder="ERC20"
                 id="erc20"
+                value={amount} 
+                onChange={handleChange}
               />
             </div>
             <i class="arrow-icon fas fa-exchange-alt"></i>
@@ -55,10 +64,12 @@ const Main = () => {
                 type="number"
                 placeholder="BEP20"
                 id="bep20"
+                value={amount} 
+                onChange={handleChange}
               />
             </div>
           </div>
-          <button className="swap-btn">Swap</button>
+          <button className="swap-btn" onClick={bscToEthTransfer}>Swap</button>
         </div>
       </div>
     </div>
